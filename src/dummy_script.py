@@ -1,5 +1,6 @@
 import re
 
+
 # Test commit
 def validate_email(email: str) -> bool:
     """
