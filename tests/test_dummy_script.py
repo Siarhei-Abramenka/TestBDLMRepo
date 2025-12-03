@@ -1,4 +1,5 @@
 import pytest
+
 from src.dummy_script import validate_email
 
 

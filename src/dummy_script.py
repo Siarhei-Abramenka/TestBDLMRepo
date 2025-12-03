@@ -59,7 +59,5 @@ def validate_email(email: str) -> bool:
     parts = domain_part.split(".")
     if len(parts) < 2:
         return False
-    if len(parts[-1]) < 2:  # TLD must be at least 2 characters
-        return False
-
-    return True
+    # TLD must be at least 2 characters
+    return len(parts[-1]) >= 2
